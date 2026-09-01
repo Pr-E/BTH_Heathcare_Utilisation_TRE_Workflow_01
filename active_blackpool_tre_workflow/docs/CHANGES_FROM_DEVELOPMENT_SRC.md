@@ -43,18 +43,16 @@ K=2..6 is always recomputed. Development-informed K=4 is treated as a prespecifi
 ### 10. Release-output pre-screen
 Patient-level filenames and obvious small aggregate cells are flagged before formal TRE disclosure review. This is a helper, not a substitute for formal disclosure control.
 
-### 11. Deployment smoke tests
-Small in-memory tests verify propensity and clustering core functions without any patient data.
-### 12. Real six-table source registry
+### 11. Real six-table source registry
 `pipeline_tre.yaml` now uses the actual TRE filenames and source roles already present in the BTH workspace (`msk_without_sports`, `inpatient_msk`, `msk_without_sports_ed`, `only_msk_sports`, `inpatient_msk_sports`, `only_msk_sports_ed`).
 
-### 13. Identifier verification by real cross-source overlap
+### 12. Identifier verification by real cross-source overlap
 The production workflow no longer assumes that a SHA-256 field name alone proves its semantic role. Patient-ID candidates in inpatient/ED sources are checked against the corresponding MSK cohort. ED event IDs are selected separately using uniqueness diagnostics. Ambiguous/no-overlap linkage blocks the run and writes aggregate QA only.
 
-### 14. Synthetic study dates removed from production defaults
+### 13. Synthetic study dates removed from production defaults
 The synthetic development window is not carried into the real workflow. `study_start_date` and `study_end_date` are deliberately unset until approved real extract coverage dates are supplied.
 
-### 15. Real-source mapping worksheet pre-populated
+### 14. Real-source mapping worksheet pre-populated
 `docs/source_mapping_tre.csv` records the expected real source fields, filenames and identifier evidence. Fields seen in prior real-data EDA are distinguished from identifiers explicitly configured in the existing TRE notebook.
 
 
