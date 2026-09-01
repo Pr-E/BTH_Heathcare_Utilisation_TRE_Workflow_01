@@ -318,7 +318,7 @@ Cluster construction uses only:
 - `BaselineInpatientRatePerPY`;
 - `BaselineEmergencyInpatientRatePerPY`.
 
-It does **not** use pathway group, age, sex, ethnicity, IMD, geography or follow-up outcomes to create clusters but instead to profile the identified clusters.
+It does **not** use pathway group, age, sex, ethnicity, IMD, geography or follow-up outcomes to create clusters but instead to profile the identified clusters as the main focus is on the understanding of the healthcare utilisation pattern within the population.
 
 The real TRE run recomputes K=2..6 diagnostics. K=4 is a development-informed candidate because it produced interpretable phenotypes in synthetic validation, but it is retained only when the real-data solution passes minimum size and stability criteria. Synthetic centroids and synthetic cluster memberships are never reused.
 
