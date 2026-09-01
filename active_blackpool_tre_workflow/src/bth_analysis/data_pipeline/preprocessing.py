@@ -1,9 +1,23 @@
 """Stage 03: convert cleaned source tables into canonical analytical grains.
 
-MSK records are represented as referral/pathway-anchor views, inpatient records
-are collapsed from episodes to admission/spell level, and ED records remain one
-row per attendance.  Source-relative pathway anchors are preprocessing references
-only and must not be relabelled as programme-start dates.
+This stage converts the six cleaned source tables into canonical analytical
+views while preserving source lineage. It:
+
+- sequences MSK referral records and creates one source-relative pathway anchor
+  per patient;
+- verifies the configured cross-source patient identifiers against the matching
+  MSK cohort;
+- retains inpatient consultant episodes for QA while creating one row per
+  admission/spell for downstream utilisation counting;
+- retains one row per cleaned ED attendance;
+- distinguishes patient-level MSK linkage from completeness of the pathway dates
+  needed for timeframe derivation;
+- reports patient-level linkage rates, anchor completeness and timeframe
+  agreement using aggregate QA outputs.
+
+No exposure assignment, final analytical-index construction, baseline/follow-up
+window
+
 """
 from pathlib import Path
 import numpy as np
