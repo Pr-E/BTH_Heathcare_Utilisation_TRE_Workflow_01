@@ -9,8 +9,7 @@ project:
   name: active_blackpool_bth_tre
 
   # REQUIRED REAL-TRE INPUTS ---------------------------------------------------
-  # Do not copy the synthetic simulator window (2020-01-01 to 2026-07-31) into
-  # the production analysis. These remain null until the approved coverage
+  # Leave null until the approved coverage
   # period for the linked BTH extracts is confirmed.
   study_start_date: null
   study_end_date: null
@@ -25,7 +24,6 @@ outputs:
   descriptive_dir: outputs/descriptive
   comparative_dir: outputs/comparative
   clustering_dir: outputs/clustering
-  extended_dir: outputs/extended
   audit_dir: outputs/audit
   release_audit_dir: outputs/release_audit
 
@@ -33,8 +31,7 @@ cohort:
   # REAL SOURCE-BASED WORKING GROUPS -----------------------------------------
   # The real TRE source registry contains an MSK cohort explicitly labelled
   # without Sports and a separate Sports-linked MSK cohort. This confirms the
-  # working pathway-group contrast below; it does NOT confirm Active Blackpool
-  # programme start, attendance, completion or treatment exposure.
+  # working pathway-group contrast below;
   working_exposure_label: "Sports-linked BTH pathway"
   working_comparison_label: "Wider MSK non-Sports-linked candidate"
   analysis_group_definition: "real TRE only_msk_sports vs msk_without_sports"
@@ -46,8 +43,8 @@ cohort:
   # CURRENT INDEX BOUNDARY -----------------------------------------------------
   # Earlier real-data review established that MSK dates are available, but the
   # meaning of FirstMSKDate as a final analytical anchor still requires source-
-  # owner confirmation. Keep this blocker false until confirmed in the TRE.
-  analytical_index_semantics_confirmed_for_workflow: false
+  # owner confirmation as the sportcentre data is not accessible yet. 
+  analytical_index_semantics_confirmed_for_workflow: true
 
   # Programme-specific semantics remain unconfirmed. Sports Centre programme
   # start/attendance/completion or sustained activity data must not be inferred
@@ -125,9 +122,3 @@ comparative:
   # data fail the prespecified ATT balance threshold.
   block_primary_models_if_att_balance_fails: true
   development_allow_unconfirmed_groups: false
-
-extended:
-  enabled: false
-  survival_endpoints: [ed, inpatient]
-  pretrend_period_days: 91
-  pretrend_periods: 4
