@@ -153,13 +153,7 @@ These summaries must never be populated with patient hashes, patient-level rows 
 - Cramér's V;
 - sparse Sports-linked cluster warnings.
 
-### 10 Extended
-
-- endpoint n/events;
-- pretrend patient-period counts;
-- optional model outputs and statuses.
-
-### 11 Release pre-screen
+### 10 Release pre-screen
 
 - internal patient-level files flagged;
 - possible small-cell aggregate files;
