@@ -2,8 +2,8 @@
 # Active Blackpool / BTH - REAL TRE source pipeline configuration
 # =============================================================================
 # This version is aligned to the six real TRE extracts already used in the BTH
-# workspace.  Filenames and identifier candidates below come from the existing
-# TRE source registry/notebook, not from the synthetic simulator.
+# workspace.  Filenames and identifier candidates below come from the already 
+# established tables in the TRE environment.
 #
 # IMPORTANT ABOUT SHA-256 FIELDS
 # ------------------------------
