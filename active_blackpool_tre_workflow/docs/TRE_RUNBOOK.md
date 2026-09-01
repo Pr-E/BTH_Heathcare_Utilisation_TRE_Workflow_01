@@ -1,6 +1,7 @@
 # Final-review navigation
 
-For the most explicit command-by-command execution sequence and decision gates, use `docs/TRE_STEP_BY_STEP_EXECUTION.md`.
+For the most explicit command-by-command execution sequence and decision gates, use `docs/TRE_STEP_BY_STEP_EXECUTION.md`. 
+
 ---
 
 # TRE runbook
