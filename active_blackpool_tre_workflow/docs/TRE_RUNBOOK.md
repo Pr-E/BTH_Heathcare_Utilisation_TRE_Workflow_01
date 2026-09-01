@@ -1,7 +1,6 @@
 # Final-review navigation
 
-For the most explicit command-by-command execution sequence and decision gates, use `docs/TRE_STEP_BY_STEP_EXECUTION.md`. For an analyst pre-ingress review, use `docs/IAN_FINAL_REVIEW_GUIDE.md`.
-
+For the most explicit command-by-command execution sequence and decision gates, use `docs/TRE_STEP_BY_STEP_EXECUTION.md`.
 ---
 
 # TRE runbook
