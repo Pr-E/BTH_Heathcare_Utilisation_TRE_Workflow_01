@@ -2,27 +2,6 @@
 
 ## Final-review release (v0.4.0)
 
-This version is prepared for **Ian's final code/methodology review before TRE ingress**. It adds a consistent aggregate audit layer across every stage, a column-level missingness audit in cleaning, explicit decision gates, reviewer-facing summaries, and extensive module/function/non-obvious-operation comments.
-
-Start the review with:
-
-- `docs/IAN_FINAL_REVIEW_GUIDE.md`
-- `docs/TRE_STEP_BY_STEP_EXECUTION.md`
-- `docs/AUDIT_TRAIL_AND_LOGGING.md`
-- `docs/CODE_REVIEW_MAP.md`
-
-After any partial or complete TRE run:
-
-```bash
-python scripts/review_audit_summary.py
-```
-
-This creates a patient-safe aggregate run narrative under `outputs/audit/`.
-
-**Intentional preflight blockers remain:** real extract coverage dates and the analytical semantics of `FirstMSKDate` must be confirmed before the real cohort is built.
-
----
-
 ## Purpose
 
 This repository is the **production translation package** for the Active Blackpool / Blackpool Teaching Hospitals healthcare-utilisation evaluation. It contains the data and analysis layers required to rerun the validated development workflow against the **real approved TRE extracts**.
