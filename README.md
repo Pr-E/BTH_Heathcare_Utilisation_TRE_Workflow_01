@@ -1,8 +1,6 @@
-# BTH_Heathcare_Utilisation_TRE_Workflow
-
 ### Active Blackpool / BTH TRE Analytical Workflow
 
-* **Purpose:** Reproducible workflow to support evaluation of the Active Blackpool exercise referral pathway using linked BTH MSK, ED and inpatient data within the TRE.
+* **Purpose:** To provide a reproducible, auditable and TRE-ready analytical framework for evaluating healthcare-utilisation trajectories associated with the Active Blackpool exercise referral pathway, by comparing the Sports-linked BTH pathway population with a suitably adjusted Wider MSK population using linked MSK, ED and inpatient data.
 
 * **Development approach:** Built and validated using synthetic data before translation to the real BTH datasets.
 
