@@ -89,11 +89,7 @@ The descriptive directory additionally contains Table 1, missingness, baseline b
 - `outputs/clustering/tables/cluster_change_summary.csv`
 - figures in `outputs/clustering/figures/`
 
-### Stage 10 — Optional extended
-
-- extended endpoint/pretrend summary/model tables under `outputs/extended/` when enabled.
-
-### Stage 11 — Release pre-screen
+### Stage 10 — Release pre-screen
 
 - pre-screen tables under `outputs/release_audit/`
 
