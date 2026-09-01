@@ -33,7 +33,7 @@ Review `config/pipeline_tre.yaml`:
 ```yaml
 data_source:
   mode: tre
-  tre_dir: src
+  tre_dir: /project/readonly
 ```
 
 Change `tre_dir` only if the approved source folder differs.
