@@ -463,18 +463,6 @@ only if the optional extension has been enabled and justified. Otherwise proceed
 
 ---
 
-## Stage 10 — Optional extended analysis
-
-```bash
-python scripts/run_10_extended_optional.py
-```
-
-Purpose:
-
-- run configured exploratory survival/pretrend extensions only when explicitly enabled.
-
-**Decision:** stronger Difference-in-Differences language requires genuine multi-period pre-index trend support; the optional stage must not retroactively strengthen causal claims without evidence.
-
 Next:
 
 ```bash
@@ -483,7 +471,7 @@ python scripts/run_11_release_audit.py
 
 ---
 
-## Stage 11 — Output release pre-screen
+## Stage 10 — Output release pre-screen
 
 ```bash
 python scripts/run_11_release_audit.py
