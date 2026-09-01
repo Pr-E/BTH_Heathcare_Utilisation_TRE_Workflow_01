@@ -66,9 +66,7 @@ Accordingly, the main model estimates an **adjusted comparative association in b
     • K=2..6 diagnostics recomputed
     • K=4 development-informed candidate retained only if real-data criteria pass
         ↓
-10  Optional extended analyses
-        ↓
-11  Output release pre-screen
+10  Output release pre-screen
     • patient-level output flagging
     • small-cell flagging
     • formal TRE disclosure control still required
@@ -98,8 +96,7 @@ active_blackpool_tre_workflow/
 │   ├── run_07_descriptive.py
 │   ├── run_08_comparative.py
 │   ├── run_09_clustering.py
-│   ├── run_10_extended_optional.py
-│   ├── run_11_release_audit.py
+│   ├── run_10_release_audit.py
 │   └── run_all_tre.py
 │
 ├── src/bth_analysis/
@@ -154,14 +151,14 @@ The current workspace screenshot places these extracts under `src`, so the defau
 ```yaml
 data_source:
   mode: tre
-  tre_dir: src
+  tre_dir: /project/readonly
 ```
 
-Change only `tre_dir` if the approved TRE workspace stores the same extracts elsewhere.
+Change only `/project/readonly` if the approved TRE workspace stores the same extracts elsewhere.
 
 ### 4. Confirm the real extract coverage window
 
-`config/workflow_tre.yaml` deliberately leaves `study_start_date` and `study_end_date` unset. Populate them from the approved BTH/TRE extract coverage documentation before cohort construction. **Do not reuse the synthetic simulator window.**
+`config/workflow_tre.yaml` deliberately leaves `study_start_date` and `study_end_date` unset. Populate them from the approved BTH/TRE extract coverage documentation before cohort construction. **Synthetic window is not recomputed.**
 
 ### 5. Review the real source mapping
 
