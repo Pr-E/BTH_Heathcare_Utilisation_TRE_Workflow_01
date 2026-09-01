@@ -1,4 +1,4 @@
-"""Exploratory baseline healthcare-utilisation phenotyping for TRE data.
+"""Secondary exploratory baseline healthcare-utilisation phenotyping for TRE data.
 
 Clusters are formed from pre-index utilisation only.  Pathway membership,
 demographics and follow-up outcomes are deliberately excluded from K-means
