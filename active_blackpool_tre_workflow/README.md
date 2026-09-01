@@ -358,8 +358,6 @@ python scripts/run_11_release_audit.py
 
 This pre-screen flags obvious patient-level filenames and small aggregate cells. It **does not replace the TRE's formal disclosure-control process**.
 
-Patient-level files such as the patient spine, outcome dataset, matched population, propensity-scored population and cluster assignments are internal analytical artefacts and should not be requested for egress.
-
 ---
 
 # 8. Reproducibility
