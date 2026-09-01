@@ -15,14 +15,12 @@
 
 project:
   name: active_blackpool_bth_tre
-
 data_source:
   mode: tre
-  # The current BTH TRE workspace stores the six extracts in the repository's
-  # src directory.  Change only this path if the approved workspace location is
-  # different; the real filenames below should otherwise remain unchanged.
-  tre_dir: src
+  # Real BTH source extracts are mounted read-only by the TRE.
+  tre_dir: /project/readonly
 
+  
 ingestion:
   # Real extracts may contain approved fields beyond the analytical minimum.
   # Required canonical fields must be present, but extra fields are retained and
