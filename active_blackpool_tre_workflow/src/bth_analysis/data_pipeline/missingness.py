@@ -1,18 +1,19 @@
-"""Column-level missingness audit for the deterministic TRE cleaning stage.
+"""Column-level missingness audit for the TRE cleaning stage.
 
-The original cleaning log reported only the *total* number of empty cells in a
-source table.  That was useful as a first signal but could not answer the more
-important questions: which fields are missing, how much is missing in each one,
-whether a missing field is analytically critical or expected/conditional, and
-whether missingness differs between the Sports-linked and Wider MSK source
-families.
+This module:
 
-This module answers those questions without imputing anything and without
-inventing source semantics.  Field classifications come from configuration or
-from identifier roles already verified by the workflow.  Unclassified fields
-remain explicitly labelled ``UNCLASSIFIED_REVIEW`` so a reviewer can resolve
-them from the BTH data dictionary rather than from a percentage heuristic.
+- quantifies missing values by column using counts and percentages;
+- flags analytically critical fields;
+- identifies expected or conditional missingness using configured rules;
+- labels unresolved fields as ``UNCLASSIFIED_REVIEW``;
+- compares missingness between Sports-linked and Wider MSK source families;
+- produces auditable QA outputs without performing imputation.
+
+Missingness classifications are based on the pipeline configuration and verified
+identifier roles, not on missingness percentage alone.
 """
+
+
 from __future__ import annotations
 
 from typing import Any, Iterable, Mapping
